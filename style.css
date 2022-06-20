@@ -1,0 +1,51 @@
+body {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-container {
+  background-color: lightgray;
+  border: 3px solid black;
+  padding: 10px;
+  border-radius: 3%;
+}
+
+.row {
+  display: flex;
+}
+
+.display {
+  border: 3px solid black;
+  border-radius: 10%;
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  background-color: white;
+  margin: 8px;
+  padding: 8px;
+  font-size: 30px;
+}
+
+.button {
+  display: flex;
+  width: 60px;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  background-color: lightgreen;
+  margin: 6px;
+  border-radius: 25%;
+}
+
+.button:focus {
+  outline: red;
+  box-shadow: red;
+}
+
+.spaceForZero {
+  display: flex;
+  width: 50%;
+  flex: auto;
+  justify-content: center;
+}
