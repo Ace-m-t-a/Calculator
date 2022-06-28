@@ -17,17 +17,28 @@ body {
 
 .display {
   border: 3px solid black;
+  color: black;
+  width: 72px;
+  height: 35px;
   border-radius: 10%;
   display: flex;
   flex: 1;
   justify-content: flex-end;
-  background-color: white;
+  background-color: lightcyan;
   margin: 8px;
   padding: 8px;
   font-size: 30px;
 }
 
-.button {
+.button,
+.numButton,
+.multiplyBtn,
+.divideBtn,
+.addBtn,
+.subtractBtn,
+.decimalBtn,
+.equalBtn,
+.clearBtn {
   display: flex;
   width: 60px;
   align-items: center;
