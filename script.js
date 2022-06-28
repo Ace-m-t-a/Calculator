@@ -33,9 +33,10 @@ function multiply(a, b){
 
 function divide(a, b){
     if (a == 0 || b == 0){
-        return "ERROR"
+        return alert("Yeah that does not work you donut!")
+    }else{
+        return a / b;
     }
-    return a / b;
 }
 
 function operate(operator, num1, num2){
@@ -43,18 +44,24 @@ function operate(operator, num1, num2){
     let numericNum2 = parseInt(num2)
     switch(operator){
         case '+':
-            return add(numericNum1,numericNum2).toFixed(2);
+            return add(numericNum1,numericNum2).toFixed(5);
         case '-':
-            return subtract(numericNum1, numericNum2).toFixed(2);
+            return subtract(numericNum1, numericNum2).toFixed(5);
         case '*':
-            return multiply(numericNum1, numericNum2).toFixed(2);
+            return multiply(numericNum1, numericNum2).toFixed(5);
         case '/':
-            return divide(numericNum1, numericNum2).toFixed(2);
+            return divide(numericNum1, numericNum2).toFixed(5);
     }
 }
 
 function buttonClicks(e){
     value = e.target.className
+    if (value == "clearBtn"){
+        display.textContent = ""
+        firstOperand =""
+        secondOperand =""
+        operator = ""
+    }
     if(value == "numButton" && operator.length != 1){
         firstOperand += e.target.value
         display.textContent = firstOperand
